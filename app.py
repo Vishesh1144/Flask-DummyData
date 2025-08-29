@@ -11,7 +11,7 @@ def sixDigitRandomNumber():
     num += str(random.randint(0,9))
     return num
 
-@app.route('/dummydata', methods=['GET'])
+@app.route('/', methods=['GET'])
 def dummydata():
     return {'data': sixDigitRandomNumber()}
 
